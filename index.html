@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kathy Tran</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="macro3.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="image_section">
+                <div id="background_container">
+                    <img src="images/background.png" alt="Forest Background" id="background_image">
+
+                    <!-- Grass Clumps -->
+                    <div id="grass_container">
+                        <img src="images/grass.png" alt="Grass Clump 1" class="grass" id="grass1">
+                        <img src="images/grass.png" alt="Grass Clump 2" class="grass" id="grass2">
+                        <img src="images/grass.png" alt="Grass Clump 3" class="grass" id="grass3">
+                    </div>
+                </div>
+            </div>
+
+            <div id="content_section">
+                <h1>Pokemon Catching Game</h1>
+                <p>Click 1 of the grass clumps to play. They might contain: a Pokemon, free Pokeballs or nothing.</p>
+                <p>Each time you pick a grass clump you use 1 of your Pokeballs. When you run out the game will be over!</p>
+                <h3 id="progress">Your progress so far ...</h3>
+                <p id="pokeball_track">Pokeballs left: 5</p>
+                <p id="pokemon_track">Pokemon caught: 0</p>
+                <button id="play_again">Play Again</button>
+                <h1><span id="result"></span></h1>
+            </div>
+
+        </div>
+
+
+
+        <div id="history_and_pokedex_container">
+            <!-- Game History Section -->
+            <div id="result_history_section">
+                <h2>Game History</h2>
+                <ul id="result_history"></ul>
+                <button id="clear_history">Clear History</button>
+                <button id="start_over">Start Over</button>
+            </div>
+        
+            <!-- Pokedex Section -->
+            <div id="pokedex_section">
+                <h2>Pokedex</h2>
+                <table id="pokedex_table">
+                    <thead>
+                        <tr>
+                            <th>Pokemon</th>
+                            <th>Count</th>
+                            <th>Histogram</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Place for rows -->
+                    </tbody>
+                </table>
+                <p id="special_message"></p>
+            </div>
+        </div>
+        
+
+        <div id="view_code_section">
+            <a href="https://github.com/your-repository-link" target="_blank">
+                <button id="view_code_button">View my code on Github</button>
+            </a>
+        </div>
+        
+        <script src="macro3.js"></script>
+    </body>
+</html>
+
+
